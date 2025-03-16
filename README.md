@@ -59,22 +59,19 @@ npm run build-storybook
 
 ## Project Structure
 
-- `/src`: Source code for components
-- `/lib`: Library-specific utilities and helpers
-- `/test`: Test utilities and setup
+- `/lib`: Source code for components
 - `/dist`: Built library output (generated)
-- `/.storybook`: Storybook configuration
-- `/public`: Static assets
+- `/src`: Vite app for demoing components
 
 ## Development Guidelines
 
 - All components should be written in TypeScript
 - Components should be accessible and follow WCAG guidelines
 - Each component should have:
-  - Unit tests using Vitest and Testing Library
+  - Unit tests using Vitest, Testing Library, and Playwright
   - Storybook documentation
   - Type definitions
-  - Proper accessibility implementation
+  - Proper accessibility implementations
 
 ## Building Components
 
