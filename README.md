@@ -85,11 +85,48 @@ Components are built using Vite and TypeScript, with CSS modules for styling. Th
 
 ## Testing
 
-The project uses Vitest with Testing Library for component testing. Tests include:
+This project uses Vitest with React Testing Library for testing. To run the tests:
 
-- Unit tests for components
-- Accessibility tests using jest-axe
-- Integration tests where necessary
+1. Install dependencies:
+
+```bash
+npm install
+```
+
+2. Install Playwright browsers (required for browser-based testing):
+
+```bash
+npx playwright install chromium
+```
+
+3. Run tests:
+
+```bash
+npm run test
+```
+
+For watch mode:
+
+```bash
+npm run test -- --watch
+```
+
+### Test Setup
+
+The test environment is configured with:
+
+- Jest DOM matchers for DOM testing
+- React Testing Library for component testing
+- Automatic cleanup after each test
+- TypeScript support
+- Playwright for browser-based testing
+
+If you encounter any issues with the test setup, make sure:
+
+1. All dependencies are properly installed
+2. Playwright browsers are installed using the command above
+3. TypeScript types are properly configured
+4. The test setup file at `test/setup.ts` is present and properly configured
 
 ## Contributing
 
