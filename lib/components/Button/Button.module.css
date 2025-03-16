@@ -2,17 +2,21 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: var(--space-100);
   white-space: nowrap;
-  border-radius: 6px;
-  font-size: 14px;
-  font-weight: 500;
-  transition: colors 0.2s;
+  border-radius: var(--corner-radius-100);
+  font-family: var(--text-label-font-family);
+  font-size: var(--text-label-font-size);
+  font-weight: var(--text-label-font-weight);
+  transition: all 0.2s ease;
+  border: none;
+  cursor: pointer;
 }
 
 .button:focus-visible {
   outline: none;
-  ring: 1px solid var(--ring-color);
+  ring: var(--border-width-200) solid var(--control-focus-color);
+  ring-offset: var(--border-width-200);
 }
 
 .button:disabled {
@@ -22,88 +26,90 @@
 
 .button svg {
   pointer-events: none;
-  width: 16px;
-  height: 16px;
+  width: var(--space-300);
+  height: var(--space-300);
   flex-shrink: 0;
 }
 
 /* Variants */
 .default {
-  background-color: var(--primary-color);
-  color: var(--primary-foreground);
-  box-shadow: var(--shadow);
+  background-color: var(--action-default-background-color);
+  color: var(--action-default-foreground-color);
 }
 
 .default:hover {
-  background-color: var(--primary-color-90);
+  background-color: var(--surface-primary-foreground-color);
 }
 
 .destructive {
-  background-color: var(--destructive-color);
-  color: var(--destructive-foreground);
-  box-shadow: var(--shadow-sm);
+  background-color: var(--action-destructive-background-color);
+  color: var(--action-destructive-foreground-color);
 }
 
 .destructive:hover {
-  background-color: var(--destructive-color-90);
+  background-color: var(--tone-destructive-background-color);
 }
 
 .outline {
-  border: 1px solid var(--input-border);
-  background-color: var(--background);
-  box-shadow: var(--shadow-sm);
+  border: var(--border-width-100) solid var(--action-outline-border);
+  background-color: var(--action-outline-background-color);
+  color: var(--action-outline-foreground-color);
 }
 
 .outline:hover {
-  background-color: var(--accent-color);
-  color: var(--accent-foreground);
+  background-color: var(--action-outline-hover-background-color);
 }
 
 .secondary {
-  background-color: var(--secondary-color);
-  color: var(--secondary-foreground);
-  box-shadow: var(--shadow-sm);
+  background-color: var(--action-secondary-background-color);
+  color: var(--action-secondary-foreground-color);
 }
 
 .secondary:hover {
-  background-color: var(--secondary-color-80);
+  background-color: var(--surface-secondary-background-color);
+}
+
+.ghost {
+  background-color: var(--action-ghost-background-color);
+  color: var(--action-ghost-foreground-color);
 }
 
 .ghost:hover {
-  background-color: var(--accent-color);
-  color: var(--accent-foreground);
+  background-color: var(--action-ghost-hover-background-color);
 }
 
 .link {
-  color: var(--primary-color);
-  text-decoration-thickness: 4px;
+  background: none;
+  color: var(--action-link-foreground-color);
+  text-decoration-line: none;
+  height: auto !important;
+  padding: 0 !important;
 }
 
 .link:hover {
-  text-decoration: underline;
+  text-decoration-line: underline;
+  text-underline-offset: var(--space-75);
 }
 
 /* Sizes */
 .sizeDefault {
-  height: 36px;
-  padding: 8px 16px;
+  height: var(--space-550);
+  padding: 0 var(--space-300);
 }
 
 .sizeSm {
-  height: 32px;
-  padding: 0 12px;
-  font-size: 12px;
-  border-radius: 6px;
+  height: var(--space-500);
+  padding: 0 var(--space-200);
+  font-size: var(--font-size-75);
 }
 
 .sizeLg {
-  height: 40px;
-  padding: 0 32px;
-  border-radius: 6px;
+  height: var(--space-600);
+  padding: 0 var(--space-500);
 }
 
 .sizeIcon {
-  height: 36px;
-  width: 36px;
+  height: var(--space-550);
+  width: var(--space-550);
   padding: 0;
 }

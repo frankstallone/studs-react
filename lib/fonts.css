@@ -1,0 +1,64 @@
+/* Helvetica Now Display */
+@font-face {
+  font-family: 'Helvetica Now Display';
+  src: url('./fonts/helvetica-now/HelveticaNowDisplay-Light.otf')
+    format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Now Display';
+  src: url('./fonts/helvetica-now/HelveticaNowDisplay-Regular.otf')
+    format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Now Display';
+  src: url('./fonts/helvetica-now/HelveticaNowDisplay-Medium.otf')
+    format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Now Display';
+  src: url('./fonts/helvetica-now/HelveticaNowDisplay-Bold.otf')
+    format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Helvetica Now Text */
+@font-face {
+  font-family: 'Helvetica Now Text';
+  src: url('./fonts/helvetica-now/HelveticaNowText-Light.otf')
+    format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Now Text';
+  src: url('./fonts/helvetica-now/HelveticaNowText-Regular.otf')
+    format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Now Text';
+  src: url('./fonts/helvetica-now/HelveticaNowText-Medium.otf')
+    format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Now Text';
+  src: url('./fonts/helvetica-now/HelveticaNowText-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
