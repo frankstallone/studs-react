@@ -11,6 +11,13 @@ export type ButtonVariant =
   | 'link'
 export type ButtonSize = 'default' | 'sm' | 'lg' | 'icon'
 
+const sizeToClassName: Record<ButtonSize, keyof typeof styles> = {
+  default: 'sizeDefault',
+  sm: 'sizeSm',
+  lg: 'sizeLg',
+  icon: 'sizeIcon'
+}
+
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: ButtonVariant
@@ -34,7 +41,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     const classes = [
       styles.button,
       styles[variant],
-      styles[`size${size.charAt(0).toUpperCase()}${size.slice(1)}`],
+      styles[sizeToClassName[size]],
       className
     ]
       .filter(Boolean)

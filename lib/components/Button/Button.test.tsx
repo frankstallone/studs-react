@@ -1,13 +1,23 @@
 import * as React from 'react'
 import { describe, it, expect, vi, afterEach } from 'vitest'
 import { render, screen, cleanup } from '@testing-library/react'
-import userEvent from '@testing-library/user-event'
+import { userEvent } from '@testing-library/user-event'
 import { axe, toHaveNoViolations } from 'jest-axe'
 import '@testing-library/jest-dom/vitest'
-import { Button } from '.'
+import { Button } from './index.js'
 import styles from './Button.module.css'
 
 expect.extend(toHaveNoViolations)
+
+const sizeToClassName: Record<
+  'default' | 'sm' | 'lg' | 'icon',
+  keyof typeof styles
+> = {
+  default: 'sizeDefault',
+  sm: 'sizeSm',
+  lg: 'sizeLg',
+  icon: 'sizeIcon'
+}
 
 describe('Button', () => {
   afterEach(() => {
@@ -48,9 +58,7 @@ describe('Button', () => {
       cleanup()
       render(<Button size={size}>Button</Button>)
       const button = screen.getByRole('button', { name: /button/i })
-      expect(button).toHaveClass(
-        styles[`size${size.charAt(0).toUpperCase()}${size.slice(1)}`]
-      )
+      expect(button).toHaveClass(styles[sizeToClassName[size]])
     })
   })
 
