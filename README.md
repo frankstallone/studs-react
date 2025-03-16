@@ -1,54 +1,102 @@
-# React + TypeScript + Vite
+# Simpson Strong-Tie STUDS React Component Library
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains the React component library for Simpson Strong-Tie's STUDS design system. It provides a collection of reusable, accessible, and type-safe components built with React and TypeScript.
 
-Currently, two official plugins are available:
+## Technologies
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React 19**: Latest version of React with improved features and performance
+- **TypeScript**: For type safety and better developer experience
+- **Vite**: Modern build tool for faster development and optimized production builds
+- **Storybook 8**: For component documentation and development
+- **Vitest**: Testing framework for unit and integration tests
+- **Testing Library**: For writing maintainable component tests
+- **Radix UI**: For accessible primitive components
+- **ESLint**: Code linting with strict TypeScript rules
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Installation
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```bash
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Development
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```bash
+# Start the development server
+npm run dev
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+# Run Storybook for component development
+npm run storybook
+
+# Run tests
+npm run test
 ```
+
+### Building
+
+```bash
+# Build the library
+npm run build
+
+# Build Storybook documentation
+npm run build-storybook
+```
+
+## Available Scripts
+
+- `dev`: Start Vite development server
+- `build`: Build the library for production (TypeScript compilation + Vite build)
+- `lint`: Run ESLint checks
+- `preview`: Preview the production build locally
+- `test`: Run Vitest tests
+- `storybook`: Start Storybook development server
+- `build-storybook`: Build static Storybook site
+- `prepublishOnly`: Run build before publishing
+
+## Project Structure
+
+- `/src`: Source code for components
+- `/lib`: Library-specific utilities and helpers
+- `/test`: Test utilities and setup
+- `/dist`: Built library output (generated)
+- `/.storybook`: Storybook configuration
+- `/public`: Static assets
+
+## Development Guidelines
+
+- All components should be written in TypeScript
+- Components should be accessible and follow WCAG guidelines
+- Each component should have:
+  - Unit tests using Vitest and Testing Library
+  - Storybook documentation
+  - Type definitions
+  - Proper accessibility implementation
+
+## Building Components
+
+Components are built using Vite and TypeScript, with CSS modules for styling. The build process:
+
+1. Compiles TypeScript code
+2. Bundles components with Vite
+3. Generates type definitions
+4. Injects CSS appropriately
+
+## Testing
+
+The project uses Vitest with Testing Library for component testing. Tests include:
+
+- Unit tests for components
+- Accessibility tests using jest-axe
+- Integration tests where necessary
+
+## Contributing
+
+Please ensure all new components:
+
+1. Follow the established coding patterns
+2. Include proper documentation
+3. Have comprehensive tests
+4. Are accessible
+5. Pass all linting rules
