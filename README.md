@@ -4,14 +4,16 @@ This repository contains the React component library for Simpson Strong-Tie's ST
 
 ## Technologies
 
-- **React 19**: Latest version of React with improved features and performance
-- **TypeScript**: For type safety and better developer experience
-- **Vite**: Modern build tool for faster development and optimized production builds
-- **Storybook 8**: For component documentation and development
-- **Vitest**: Testing framework for unit and integration tests
-- **Testing Library**: For writing maintainable component tests
-- **Radix UI**: For accessible primitive components
-- **ESLint**: Code linting with strict TypeScript rules
+- **React 19**: Latest experimental version of React with improved features, server components, and concurrent rendering capabilities
+- **TypeScript 5.7**: For robust type safety, improved developer experience, and latest language features
+- **Vite 6.2**: Modern build tool offering lightning-fast HMR and optimized production builds
+- **Storybook 8.6**: Latest version for component documentation, development, and testing in isolation
+- **Vitest 3.0**: Fast, native ESM-based testing framework with first-class TypeScript support
+- **Testing Library 16.2**: Complete testing utilities emphasizing user-centric testing approaches
+- **Radix UI 1.1**: Unstyled, accessible component primitives for building robust design systems
+- **ESLint 9.21**: Code linting with strict TypeScript rules and React-specific configurations
+- **Playwright 1.51**: For reliable end-to-end testing across multiple browsers
+- **CSS Modules**: For scoped, modular styling with TypeScript integration
 
 ## Getting Started
 
