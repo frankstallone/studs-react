@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { describe, it, expect, vi, afterEach } from 'vitest'
+import { describe, it, expect, vi } from 'vitest'
 import { render, screen, cleanup } from '@testing-library/react'
 import { userEvent } from '@testing-library/user-event'
 import { axe, toHaveNoViolations } from 'jest-axe'
@@ -20,10 +20,6 @@ const sizeToClassName: Record<
 }
 
 describe('Button', () => {
-  afterEach(() => {
-    cleanup()
-  })
-
   it('renders correctly with default props', () => {
     render(<Button>Click me</Button>)
     const button = screen.getByRole('button', { name: /click me/i })
