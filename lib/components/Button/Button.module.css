@@ -15,7 +15,7 @@
 
 .button:focus-visible {
   outline: none;
-  ring: var(--border-width-200) solid var(--control-focus-color);
+  ring: var(--border-width-200) solid rgb(var(--control-focus-color));
   ring-offset: var(--border-width-200);
 }
 
@@ -33,54 +33,60 @@
 
 /* Variants */
 .default {
-  background-color: var(--action-default-background-color);
-  color: var(--action-default-foreground-color);
+  background-color: rgb(var(--action-default-background-color));
+  color: rgb(var(--action-default-foreground-color));
 }
 
 .default:hover {
-  background-color: var(--surface-primary-foreground-color);
+  background-color: rgb(
+    var(--surface-primary-foreground-color) / var(--alpha-100)
+  );
 }
 
 .destructive {
-  background-color: var(--action-destructive-background-color);
-  color: var(--action-destructive-foreground-color);
+  background-color: rgb(var(--action-destructive-background-color));
+  color: rgb(var(--action-destructive-foreground-color));
 }
 
 .destructive:hover {
-  background-color: var(--tone-destructive-background-color);
+  background-color: rgb(
+    var(--tone-destructive-background-color) / var(--alpha-100)
+  );
 }
 
 .outline {
-  border: var(--border-width-100) solid var(--action-outline-border);
-  background-color: var(--action-outline-background-color);
-  color: var(--action-outline-foreground-color);
+  border: var(--border-width-100) solid rgb(var(--action-outline-border));
+  background-color: rgb(var(--action-outline-background-color));
+  color: rgb(var(--action-outline-foreground-color));
 }
 
 .outline:hover {
-  background-color: var(--action-outline-hover-background-color);
+  background-color: rgb(var(--action-outline-hover-background-color));
 }
 
 .secondary {
-  background-color: var(--action-secondary-background-color);
-  color: var(--action-secondary-foreground-color);
+  background-color: rgb(var(--action-secondary-background-color));
+  color: rgb(var(--action-secondary-foreground-color));
 }
 
 .secondary:hover {
-  background-color: var(--surface-secondary-background-color);
+  background-color: rgb(
+    var(--surface-secondary-background-color) / var(--alpha-200)
+  );
 }
 
 .ghost {
-  background-color: var(--action-ghost-background-color);
-  color: var(--action-ghost-foreground-color);
+  background-color: rgb(var(--action-ghost-background-color));
+  color: rgb(var(--action-ghost-foreground-color));
 }
 
 .ghost:hover {
-  background-color: var(--action-ghost-hover-background-color);
+  background-color: rgb(var(--action-ghost-hover-background-color));
 }
 
 .link {
   background: none;
-  color: var(--action-link-foreground-color);
+  color: rgb(var(--action-link-foreground-color));
   text-decoration-line: none;
   height: auto !important;
   padding: 0 !important;
