@@ -125,7 +125,6 @@ If you encounter any issues with the test setup, make sure:
 1. All dependencies are properly installed
 2. Playwright browsers are installed using the command above
 3. TypeScript types are properly configured
-4. The test setup file at `test/setup.ts` is present and properly configured
 
 ## Contributing
 
