@@ -273,7 +273,7 @@
     --surface-primary-foreground-color-light
   );
   --action-outline-border-light: var(--color-neutral-075);
-  --action-ghost-background-color-light: var(--color-neutral-000);
+  --action-ghost-background-color-light: var(--alpha-1000);
   --action-ghost-hover-background-color-light: var(--color-neutral-050);
   --action-ghost-foreground-color-light: var(
     --surface-primary-foreground-color-light
