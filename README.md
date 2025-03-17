@@ -50,10 +50,10 @@ npm run build-storybook
 
 - `dev`: Start Vite development server
 - `build`: Build the library for production (TypeScript compilation + Vite build)
+- `storybook`: Start Storybook development server
+- `test`: Run Vitest tests
 - `lint`: Run ESLint checks
 - `preview`: Preview the production build locally
-- `test`: Run Vitest tests
-- `storybook`: Start Storybook development server
 - `build-storybook`: Build static Storybook site
 - `prepublishOnly`: Run build before publishing
 
