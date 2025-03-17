@@ -1,6 +1,6 @@
 # Simpson Strong-Tie STUDS React Component Library
 
-This repository contains the React component library for Simpson Strong-Tie's STUDS design system. It provides a collection of reusable, accessible, and type-safe components built with React and TypeScript.
+This repository contains a test React component library for Simpson Strong-Tie's STUDS design system. It provides a collection of reusable, accessible, and type-safe components built with React and TypeScript.
 
 ## Technologies
 
