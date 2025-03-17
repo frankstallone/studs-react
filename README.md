@@ -63,6 +63,19 @@ npm run build-storybook
 - `/dist`: Built library output (generated)
 - `/src`: Vite app for demoing components
 
+### Component Structure Example
+
+Each component follows a consistent file structure. Here's an example using the Button component:
+
+```
+/lib/components/Button/
+├── Button.module.css        # Component-specific styles
+├── Button.module.css.d.ts   # TypeScript definitions for CSS modules
+├── Button.stories.tsx       # Storybook documentation and examples
+├── Button.test.tsx          # Component tests
+└── index.tsx               # Main component implementation
+```
+
 ## Development Guidelines
 
 - All components should be written in TypeScript
