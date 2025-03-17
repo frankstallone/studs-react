@@ -117,12 +117,6 @@ npx playwright install chromium
 npm run test
 ```
 
-For watch mode:
-
-```bash
-npm run test -- --watch
-```
-
 ### Test Setup
 
 The test environment is configured with:
