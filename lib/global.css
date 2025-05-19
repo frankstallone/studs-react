@@ -281,7 +281,7 @@
   --action-link-foreground-color-light: var(
     --surface-primary-foreground-color-light
   );
-  --tone-default-background-color-light: var(--color-neutral-900);
+  --feedback-default-background-color-light: var(--color-neutral-900);
   --alpha-100: 0.9;
   --alpha-200: 0.8;
   --alpha-300: 0.7;
@@ -292,20 +292,20 @@
   --alpha-800: 0.2;
   --alpha-900: 0.1;
   --alpha-1000: 0;
-  --tone-default-focus-light: var(--surface-primary-foreground-color-light);
+  --feedback-default-focus-light: var(--surface-primary-foreground-color-light);
   --control-focus-light: var(--surface-primary-foreground-color-light);
-  --tone-default-foreground-color-light: var(--color-neutral-000);
-  --tone-secondary-background-color-light: var(--color-neutral-050);
-  --tone-secondary-foreground-color-light: var(
+  --feedback-default-foreground-color-light: var(--color-neutral-000);
+  --feedback-secondary-background-color-light: var(--color-neutral-050);
+  --feedback-secondary-foreground-color-light: var(
     --surface-primary-foreground-color-light
   );
-  --tone-outline-background-color-light: var(--color-neutral-000);
-  --tone-outline-foreground-color-light: var(
+  --feedback-outline-background-color-light: var(--color-neutral-000);
+  --feedback-outline-foreground-color-light: var(
     --surface-primary-foreground-color-light
   );
-  --tone-outline-border-light: var(--color-neutral-075);
-  --tone-destructive-background-color-light: var(--color-red-500);
-  --tone-destructive-foreground-color-light: var(--color-neutral-000);
+  --feedback-outline-border-light: var(--color-neutral-075);
+  --feedback-destructive-background-color-light: var(--color-red-500);
+  --feedback-destructive-foreground-color-light: var(--color-neutral-000);
   --text-header-lg-font-family: var(--font-family-display);
   --text-header-lg-font-weight: var(--font-weight-500);
   --text-header-lg-font-size: var(--font-size-600);
@@ -413,22 +413,32 @@
   --control-selected-foreground-color: var(
     --control-selected-foreground-color-light
   );
-  --tone-default-background-color: var(--tone-default-background-color-light);
-  --tone-default-foreground-color: var(--tone-default-foreground-color-light);
-  --tone-secondary-background-color: var(
-    --tone-secondary-background-color-light
+  --feedback-default-background-color: var(
+    --feedback-default-background-color-light
   );
-  --tone-destructive-background-color: var(
-    --tone-destructive-background-color-light
+  --feedback-default-foreground-color: var(
+    --feedback-default-foreground-color-light
   );
-  --tone-destructive-foreground-color: var(
-    --tone-destructive-foreground-color-light
+  --feedback-secondary-background-color: var(
+    --feedback-secondary-background-color-light
   );
-  --tone-outline-background-color: var(--tone-outline-background-color-light);
-  --tone-default-focus-background-color: var(--tone-default-focus-light);
-  --tone-outline-foreground-color: var(--tone-outline-foreground-color-light);
-  --tone-outline-border: var(--tone-outline-border-light);
-  --tone-secondary-foreground-color: var(
-    --tone-secondary-foreground-color-light
+  --feedback-destructive-background-color: var(
+    --feedback-destructive-background-color-light
+  );
+  --feedback-destructive-foreground-color: var(
+    --feedback-destructive-foreground-color-light
+  );
+  --feedback-outline-background-color: var(
+    --feedback-outline-background-color-light
+  );
+  --feedback-default-focus-background-color: var(
+    --feedback-default-focus-light
+  );
+  --feedback-outline-foreground-color: var(
+    --feedback-outline-foreground-color-light
+  );
+  --feedback-outline-border: var(--feedback-outline-border-light);
+  --feedback-secondary-foreground-color: var(
+    --feedback-secondary-foreground-color-light
   );
 }

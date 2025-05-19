@@ -50,7 +50,7 @@
 
 .destructive:hover {
   background-color: rgb(
-    var(--tone-destructive-background-color) / var(--alpha-100)
+    var(--feedback-destructive-background-color) / var(--alpha-100)
   );
 }
 
